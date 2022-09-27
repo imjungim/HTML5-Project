@@ -27,7 +27,7 @@ let url; //전역변수 선언.
 const getNews = async () => {
  try{
   let header = new Headers({
-    "x-api-key": "LrgMfMc0tJBVLJ7g8H2m5S05iykEfBtTZffyIOJ3ytI",
+    "x-api-key": "CHi75Ke2MijpxyWNTi6p2fTjojQ75EW9oQSwe0uZ218",
   });
   url.searchParams.set('page',page) // url 쿼리 변경 &page = page전역변수의 값
   console.log("url?:",url)
