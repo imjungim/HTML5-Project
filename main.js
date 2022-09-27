@@ -30,7 +30,6 @@ const getNews = async () => {
     "x-api-key": "CHi75Ke2MijpxyWNTi6p2fTjojQ75EW9oQSwe0uZ218",
   });
   url.searchParams.set('page',page) // url 쿼리 변경 &page = page전역변수의 값
-  console.log("url?:",url)
   let response = await fetch(url, { headers: header }); //데이터를 보내기 fetch
   //console.log(response) //Promise {<pending>} : 데이터가 아직 도착하지 않음
   let data = await response.json(); //서버로부터 데이터를 받아오는 시간이 필요하기때문에 await
@@ -39,9 +38,8 @@ const getNews = async () => {
       if(data.total_hits ==0){ //total_hits 뉴스데이터
         throw new Error("검색된 결과값이 없습니다.")
       } //error발생 시 건너뛰게 됨
-      console.log("data는?",data)//api에서 받은 데이터
+      //console.log("data는?",data)//api에서 받은 데이터
       news = data.articles;
-      console.log(news)
       total_pages = data.total_pages;
       page = data.page;
 
@@ -52,7 +50,6 @@ const getNews = async () => {
     }
   
  }catch(error){
-   console.log("잡힌 에러",error.message)
    errorRender(error.message);
  }
     
@@ -72,7 +69,7 @@ const getNews = async () => {
     url = new URL(
       `https://api.newscatcherapi.com/v2/latest_headlines?countries=KR&page_size=10&topic=${topic}`
     );
-    console.log("url:", url);
+]
 
     getNews();
   };
