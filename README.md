@@ -1,7 +1,8 @@
 # NewApp 오늘의 뉴스
-![image](https://user-images.githubusercontent.com/97380925/192442933-314af1ad-33be-4c72-839d-892805069a70.png)
+![news_](https://user-images.githubusercontent.com/97380925/192461554-9e811a64-bfec-417c-bde9-144c79967c39.gif)
+
 News Api를 활용하여 만든 뉴스 웹페이지입니다.
-* 데모 : 
+
 
 ## 기능
 1. 최신뉴스보기
