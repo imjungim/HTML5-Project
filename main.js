@@ -23,7 +23,9 @@ inputEnter.addEventListener("keypress",(event)=>{
   }
 });
 let url; //전역변수 선언.
-
+ let header = new Headers({
+    "x-api-key": "CHi75Ke2MijpxyWNTi6p2fTjojQ75EW9oQSwe0uZ218",
+  });
 const getNews = async () => {
  try{
   let header = new Headers({
